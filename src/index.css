@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Calibri", "Candara", "Segoe", "Segoe UI", "Optima", Arial,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #000000;
+  font-weight: 600;
+  background-color: #f9fafb;
+  font-size: 15px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* .title-dash::before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: rgb(230, 233, 236);
+  width: 45%;
+  bottom: 8px;
+  left: 0;
+}
+.title-dash::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: rgb(230, 233, 236);
+  width: 45%;
+  bottom: 8px;
+  right: 0;
+} */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b4b4b4;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #818181;
+}
+
+.carousel-control-prev {
+  /* padding-right: 7rem; */
+  margin-top: -13rem !important;
+}
+
+.carousel-control-next {
+  /* padding-left: 7rem; */
+  margin-top: -13rem !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+@media (max-width: 639px) {
+  .carousel-control-prev {
+    /* padding-right: 7rem; */
+    margin-top: 0 !important;
+  }
+
+  .carousel-control-next {
+    /* padding-left: 7rem; */
+    margin-top: 0 !important;
+  }
+}
