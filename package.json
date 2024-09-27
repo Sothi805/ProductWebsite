@@ -25,6 +25,8 @@
     "react-dom": "^18.2.0",
     "react-query": "^3.39.3",
     "react-router-dom": "^6.15.0",
+    "react-select": "^5.8.1",
+    "react-select-async-paginate": "^0.7.6",
     "shortid": "^2.2.16",
     "tailwind-merge": "^1.14.0",
     "vite-plugin-svgr": "^3.2.0",

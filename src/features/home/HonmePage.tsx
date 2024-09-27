@@ -1,5 +1,4 @@
 import SlideShow from "@/components/SlideShow";
-import React from "react";
 import CardLayout from "./component/CardLayout";
 
 const HonmePage = () => {

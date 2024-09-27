@@ -1,5 +1,4 @@
 
-import React from 'react'
 import Router from "./routes";
 
 import { QueryClient, QueryClientProvider } from 'react-query';

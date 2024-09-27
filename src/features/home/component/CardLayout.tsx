@@ -1,13 +1,12 @@
-import React from "react";
 import Card from "./Card";
 
-const CardLayout = ({ title1, item1,title2,item2 }: any) => {
+const CardLayout = ({ title1, item1, title2, item2 }: any) => {
   return (
     <div className="min-xl:max-w-[80%] border xl:max-w-[80%] sm:max-w-[100%] rounded-md bg-white pb-4 relative min-xl:-mt-[15rem] xl:-mt-[13rem] md:-mt-[12rem] sm:-mt-0 z-40 mx-auto shadow-md">
       {/* 1 */}
       <Title title={title1} />
       <div className="min-xl:px-[2rem] d-sm:px-[0.5rem] xl:px-[2.2rem] grid min-xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 min-xl:gap-[1.5rem] xl:gap-[2.5rem] lg:gap-[3.5rem] md:gap-[2rem] sm:grid-cols-2 d-sm:gap-2">
-        {item1?.map((e: any, index: number) => (
+        {item1?.map((index: number) => (
           <div key={index} className="col-span-1">
             <Card />
           </div>
@@ -16,7 +15,7 @@ const CardLayout = ({ title1, item1,title2,item2 }: any) => {
       {/* 2 */}
       <Title title={title2} />
       <div className="min-xl:px-[2rem] d-sm:px-[0.5rem] xl:px-[2.2rem] grid min-xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 min-xl:gap-[1.5rem] xl:gap-[2.5rem] lg:gap-[3.5rem] md:gap-[2rem] sm:grid-cols-2 d-sm:gap-2">
-        {item2?.map((e: any, index: number) => (
+        {item2?.map((index: number) => (
           <div key={index} className="col-span-1">
             <Card />
           </div>

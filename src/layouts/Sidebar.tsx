@@ -1,11 +1,9 @@
 import { useState } from "react";
-import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Logo from "../assets/logo.png";
 import SignInModal from "@/components/SignInModal";
-import { useNavigate } from "react-router-dom";
 
-const NavBar = (props: any) => {
+const NavBar = () => {
   // const [isVisible, setIsVisible] = useState(false);
   // const [openResponrsiveMenu, setOpenResponsivMenu] = useState(false);
   // const toggleInput = () => {

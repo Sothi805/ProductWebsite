@@ -95,10 +95,9 @@
 // };
 
 // export default request;
-import axios, { AxiosError, ResponseType, CancelToken } from "axios";
+import axios, { AxiosError, ResponseType } from "axios";
 import { Cookies } from "react-cookie";
 
-const TIME_OUT = 50 * 1000;
 
 export const axiosInstance = axios.create({
   withCredentials: true,
