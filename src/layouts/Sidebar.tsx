@@ -14,7 +14,6 @@ const NavBar = () => {
   const [showSingIn, setShowSignIn] = useState(false);
   const [modalShow, setModalShow] = useState(false);
 
-  const [shoppingCard, setShoppingCart] = useState([]);
   return (
 
     <>
@@ -44,7 +43,7 @@ const NavBar = () => {
       <div className=" w-full bg-[#7EACB5]">
         <div className="max-w-[1300px] lg:pb-2 bg-[#7EACB5] mx-auto lg:px-3">
           {/* responsi */}
-          <ResponsivSideBar setModalShow={setModalShow} modalShow={modalShow} showAddCard={showAddCard} setShowAddCard={setShowAddCard}  shoppingCard={shoppingCard}/>
+          <ResponsivSideBar setModalShow={setModalShow} modalShow={modalShow} showAddCard={showAddCard} setShowAddCard={setShowAddCard} />
           {/* responsive */}
           <div className="lg:hidden flex w-full justify-between items-center pt-2 pb-2 flex-wrap">
             <div className=" min-xl:w-[80%] xl:w-[70%] sm:w-auto flex items-center justify-between">
@@ -175,7 +174,7 @@ const NavBar = () => {
 
 export default NavBar;
 
-const ResponsivSideBar = ({ setModalShow, modalShow,setShowAddCard,showAddCard,shoppingCard }: any) => {
+const ResponsivSideBar = ({ setModalShow, modalShow,setShowAddCard,showAddCard }: any) => {
   return (
     <div>
       <div className="min-lg:hidden lg:flex justify-between items-center">
@@ -318,7 +317,7 @@ const ResponsivSideBar = ({ setModalShow, modalShow,setShowAddCard,showAddCard,s
 
             <Offcanvas.Body>
               <div>
-                {shoppingCard?.length === 0 ? (
+                {[].length === 0 ? (
                   <div className="w-full h-[20rem] flex flex-col items-center gap-3 justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -334,7 +333,7 @@ const ResponsivSideBar = ({ setModalShow, modalShow,setShowAddCard,showAddCard,s
                     <h1>No Card Available Now</h1>
                   </div>
                 ) : (
-                  shoppingCard?.map((card: any, index: number) => <div>a</div>)
+                  [].map(() => <div>a</div>)
                 )}
               </div>
             </Offcanvas.Body>
