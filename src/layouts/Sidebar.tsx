@@ -338,7 +338,6 @@ const ResponsivSideBar = ({ setModalShow, modalShow,setShowAddCard,showAddCard }
               </div>
             </Offcanvas.Body>
           </Offcanvas>
-git
         </>
     </div>
 
