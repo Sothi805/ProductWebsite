@@ -1,7 +1,7 @@
 
 const Card = () => {
   return (
-    <div className="max-w-xs rounded-lg overflow-hidden cursor-pointer shadow-sm border border-gray-200 bg-white hover:-translate-y-1 hover:shadow-gray-400 transition-all duration-300">
+    <div className="p-3 overflow-hidden cursor-pointer border border-gray-200 bg-white hover:-translate-y-1 hover:shadow-gray-400 transition-all duration-300">
       {/* Image Section */}
       <img
         className="w-full h-50 object-cover"
@@ -12,7 +12,7 @@ const Card = () => {
       {/* Content Section */}
       <div className="min-dd-sm:pb-4 min-dd-sm:px-4 min-dd-sm:pt-3 dd-sm:pb-3 dd-sm:px-2 dd-sm:pt-2">
         {/* Title */}
-        <h3 className="min-md:text-[19px] md:text-[17px] sm:text-[16px] dd-sm:text-[15px] font-semibold text-gray-700 line-clamp-3">
+        <h3 className="min-md:text-[18px] md:text-[16px] sm:text-[15px] dd-sm:text-[14px] font-semibold text-gray-700 line-clamp-3">
           show-image show-image show-image show-image Skin1004 Hyalu-Cica
           Water-Fit Sun Serum Spf50+ Pa++++
         </h3>
@@ -30,17 +30,20 @@ const Card = () => {
           </span>
         </p>
 
-        {/* Discount */}
-        <p className="min-dd-sm:text-sm dd-sm:text-[12px] text-red-500 mt-[7px]">
-          Discount: 20% OFF
-        </p>
-
         {/* Price */}
-        <p className="text-sm line-through font-bold text-gray-600 mt-2">$199.99</p>
-        <p className="text-lg font-bold text-red-500 mt-1">$399.99</p>
+        <div className="flex gap-2 justify-between items-center mt-2">
+          <div className="flex gap-2 items-center">
+          <p className="text-sm line-through text-gray-400 mt-2">$199.99</p>
+          <p className="text-md font-bold text-red-500 mt-1">$399.99</p>
+          </div>
+      <div className="mt-1">
+        <span className="text-[13.5px] text-gray-500">In Stock : 10</span>
+      </div>
+        </div>
+      
 
         {/* Action Buttons */}
-        <div className="flex justify-end gap-[10px] mt-4">
+        {/* <div className="flex justify-end gap-[10px] mt-4">
           <button className="flex items-center bg-blue-500 text-white text-sm py-2 px-[10px] rounded hover:bg-blue-600 transition duration-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -65,8 +68,8 @@ const Card = () => {
             >
               <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
             </svg>
-          </button>
-        </div>
+          </button> */}
+        {/* </div> */}
       </div>
     </div>
   );

@@ -18,27 +18,53 @@ const NavBar = () => {
   return (
 
     <>
+      <div className="max-w-full bg-white shadow-md">
+        <div className="max-w-[1300px] mx-auto flex justify-between items-center">
+          <div className="h-[50px] flex gap-3 items-center ">
+            <span className="text-[13px] cursor-pointer flex gap-2 items-center border-r pr-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-file-earmark-text" viewBox="0 0 16 16">
+              <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+              <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+            </svg>Track Your Order</span>
+            <span className="text-[13px] cursor-pointer  flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-geo-alt" viewBox="0 0 16 16">
+              <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+            </svg>Store Location</span>
+          </div>
+          <div className="flex h-[30px] px-3 rounded-[6px] cursor-pointer text-[13.5px] gap-3 items-center">
+            <span className="text-[13px] cursor-pointer flex gap-2 items-center border-r pr-3"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" className="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+            </svg>Wishlist</span>
+            <span onClick={() => setShowSignIn(true)} className="text-[13px] cursor-pointer  flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" className="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z" />
+              <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+            </svg>Sign In / Register</span>
+          </div>
+        </div>
+      </div>
       <div className=" w-full bg-[#7EACB5]">
-        <div className="max-w-[1000px] bg-[#7EACB5] mx-auto lg:px-[30px] md:px-[15px]">
+        <div className="max-w-[1300px] bg-[#7EACB5] mx-auto lg:px-[30px] md:px-[15px]">
           <div className=" flex w-full justify-between items-center pt-2 pb-2 flex-wrap">
             <div className=" w-[65%] sm:w-auto flex items-center justify-between">
               <img src={Logo} alt="logo" className="w-36 md:w-32" />
               <div className="relative md:hidden">
-                <input
-                  type="text"
-                  placeholder="Find Your Products..."
-                  className="w-80 py-2 pl-3 pr-10 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-                />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  className="bi bi-search cursor-pointer absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500"
+                  className="bi bi-search cursor-pointer absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"
                   viewBox="0 0 16 16"
                 >
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                 </svg>
+                <input
+                  type="text"
+                  placeholder="Find Your Products..."
+                  className="w-[35rem] py-[10px] pl-[35px] pr-10 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500"
+                />
+                <div className="cursor-pointer absolute right-[0.3rem] bg-[#7EACB5] p-[0.6rem] text-[13px] px-3 rounded-sm text-white top-1/2 transform -translate-y-1/2">
+                  SEARCH
+                </div>
               </div>
               {/* mobile screen */}
               {/* <div className=" hidden gap-2 md:block py-2 sm:w-full justify-between ">
@@ -56,31 +82,33 @@ const NavBar = () => {
               {/*End mobile screen */}
             </div>
             <div className="flex min-sm:gap-5 sm:gap-3 items-center">
-              <button
-                onClick={() => setShowAddCard(true)}
-                className="relative flex items-center justify-center px-[15px] py-[12px] sm:px-[12px] sm:py-[10px] bg-white rounded-md shadow-md hover:bg-gray-100 focus:outline-none"
-              >
-                <span className="absolute top-1 right-0 flex items-center justify-center w-4 h-4 text-xs font-semibold text-white bg-red-500 rounded-full">
-                  4
-                </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-cart3"
-                  viewBox="0 0 16 16"
+              <div className="flex items-center">
+                <button
+                  onClick={() => setShowAddCard(true)}
+                  className="relative flex items-center justify-center px-[15px] py-[11px] sm:px-[12px] sm:py-[10px] bg-white border-r hover:bg-gray-100 focus:outline-none"
                 >
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                </svg>{" "}
-              </button>
+                  <span className="absolute top-3 pb-[0.5px] -right-[0.6rem] flex items-center justify-center w-[1.10rem] h-[1.10rem] text-xs font-semibold text-white bg-red-500 rounded-full">
+                    4
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    className="bi bi-cart3"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                  </svg>{" "}
+                </button>
+                <span
+                  className="px-[15px] py-[8.7px] sm:px-[12px] sm:py-[10px] bg-white"
+                >
+                  $ 790.00
+                </span>
+              </div>
 
-              <button
-                className="bg-red-500 border border-red-500 rounded-md shadow-md box-border text-white cursor-pointer inline-block font-sans text-base outline-none min-sm:px-4 min-sm:py-[7px] sm:px-[7px] sm:py-[5px] sm:text-[14px] text-center select-none transition-opacity duration-200 hover:bg-transparent"
-                onClick={() => setShowSignIn(true)}
-              >
-                Log In
-              </button>
+
 
               <svg
                 onClick={() => setModalShow(true)}
@@ -163,7 +191,7 @@ const NavBar = () => {
               >
                 X
               </span> */}
-               <button
+              <button
                 type="button"
                 className="text-gray-400 ml-auto"
                 onClick={() => setShowAddCard(false)}
@@ -209,43 +237,34 @@ const NavBar = () => {
 
       </div>
       <div className="max-w-full bg-white shadow-md">
-        <div className="max-w-[1350px] mx-auto bg-white lg:px-4  sm:hidden">
-          <div className="max-w-[1000px] mx-auto flex justify-between items-center">
-            <div className="h-[50px] flex gap-3 items-center ">
-              <span className="cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  fill="currentColor"
-                  className="bi bi-list"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-                  />
-                </svg>
-              </span>
-              <span className="text-[14.5px] cursor-pointer">Options</span>
-              <span className="text-[14.5px] cursor-pointer">All Products</span>
-              <span className="text-[14.5px] cursor-pointer">Promotions</span>
-              <span className="text-[14.5px] cursor-pointer">Category</span>
-              <span className="text-[14.5px] cursor-pointer">Blog</span>
-            </div>
-            <div className="flex border h-[30px] px-3 rounded-[6px] cursor-pointer text-[13.5px] gap-3 items-center">
-              <span>View Favorites</span>
+        <div className="max-w-[1300px] mx-auto flex justify-between items-center">
+          <div className="h-[50px] flex gap-4 items-center ">
+            <span className="cursor-pointer w-[200px] pr-2 border-r text-[14px] flex gap-2 items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="24"
+                height="24"
                 fill="currentColor"
-                className="bi bi-heart"
+                className="bi bi-list text-gray-500"
                 viewBox="0 0 16 16"
               >
-                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                />
               </svg>
-            </div>
+              SHOP BY CATEGORY
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" className="bi bi-chevron-down ml-auto" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+              </svg>
+            </span>
+            <span className="text-[14.5px] cursor-pointer">Home</span>
+            <span className="text-[14.5px] cursor-pointer">All Products</span>
+            <span className="text-[14.5px] cursor-pointer">Promotions</span>
+            <span className="text-[14.5px] cursor-pointer">Category</span>
+            <span className="text-[14.5px] cursor-pointer">Contact US</span>
+            <span className="text-[14.5px] cursor-pointer">About US</span>
+
           </div>
         </div>
       </div>

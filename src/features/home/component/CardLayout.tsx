@@ -2,10 +2,10 @@ import Card from "./Card";
 
 const CardLayout = ({ title1, item1, title2, item2 }: any) => {
   return (
-    <div className="min-xl:max-w-[80%] border opacity xl:max-w-[80%] sm:max-w-[100%] rounded-md bg-white pb-4 relative min-xl:-mt-[15rem] xl:-mt-[13rem] md:-mt-[12rem] sm:-mt-0 z-40 mx-auto shadow-md">
+    <div className="min-xl:max-w-[95%] opacity xl:max-w-[80%] sm:max-w-[100%] rounded-md bg-white pb-4 relative mt-1 z-40 mx-auto">
       {/* 1 */}
       <Title title={title1} />
-      <div className="min-xl:px-[2rem] d-sm:px-[0.5rem] xl:px-[2.2rem] grid min-xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 min-xl:gap-[1.5rem] xl:gap-[2.5rem] lg:gap-[3.5rem] md:gap-[2rem] sm:grid-cols-2 d-sm:gap-2">
+      <div className="gap-2 min-xl:px-[2rem] d-sm:px-[0.5rem] xl:px-[2.2rem] grid min-xl:grid-cols-5 xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2">
         {item1?.map((index: number) => (
           <div key={index} className="col-span-1">
             <Card />
@@ -14,7 +14,7 @@ const CardLayout = ({ title1, item1, title2, item2 }: any) => {
       </div>
       {/* 2 */}
       <Title title={title2} />
-      <div className="min-xl:px-[2rem] d-sm:px-[0.5rem] xl:px-[2.2rem] grid min-xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 min-xl:gap-[1.5rem] xl:gap-[2.5rem] lg:gap-[3.5rem] md:gap-[2rem] sm:grid-cols-2 d-sm:gap-2">
+      <div className="gap-2 min-xl:px-[2rem] d-sm:px-[0.5rem] xl:px-[2.2rem] grid min-xl:grid-cols-5 xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2">
         {item2?.map((index: number) => (
           <div key={index} className="col-span-1">
             <Card />
@@ -30,11 +30,11 @@ export default CardLayout;
 const Title = ({ title }: any) => {
   return (
     <div className="w-full justify-between px-[2rem] min-dd-sm:px-[2rem] sm:px-[0.5rem] py-[1.5rem] gap-3 flex items-center">
-      <h1 className="font-bold min-lg:text-[18px] flex items-center gap-3">
+      <h1 className="font-bold min-lg:text-[20px] flex items-center gap-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          width="23"
+          height="23"
           fill="currentColor"
           className="bi bi-bookmark-star"
           viewBox="0 0 16 16"
@@ -44,12 +44,12 @@ const Title = ({ title }: any) => {
         </svg>{" "}
         {title ?? "Title Here"}
       </h1>
-      <h1 className="flex gap-2 text-sm underline text-blue-600 cursor-pointer items-center">
+      <h1 className="flex gap-2 text-sm p-2 px-4 rounded-sm bg-[#7EACB5] text-white cursor-pointer items-center">
         View All{" "}
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="13"
-          height="13"
+          width="14"
+          height="14"
           fill="currentColor"
           className="bi bi-chevron-right"
           viewBox="0 0 16 16"
