@@ -28,25 +28,33 @@ const SlideShow = () => {
 
       <div className="carousel-inner min-xl:h-[30rem] xl:h-[25rem] lg:h-[23rem] md:h-[20rem] sm:h-[17rem] d-sm:h-[14rem]">
         <div className="carousel-item active">
-          <img
-            src="https://glistenblossom.com/_next/image?url=https%3A%2F%2Fapi.krubkrong.com%2Fcdn%2Fimage%2Ff5797ace-79b5-4baf-a92f-f7a77664bf36.webp&w=3840&q=100"
-            className="w-full min-xl:h-[30rem] xl:h-[25rem] lg:h-[23rem] md:h-[20rem] sm:h-[17rem] d-sm:h-[14rem]"
-            alt="..."
-          />
+          <div className="image-container">
+            <img
+              src="https://glistenblossom.com/_next/image?url=https%3A%2F%2Fapi.krubkrong.com%2Fcdn%2Fimage%2Ff5797ace-79b5-4baf-a92f-f7a77664bf36.webp&w=3840&q=100"
+              className="w-full min-xl:h-[30rem] xl:h-[25rem] lg:h-[23rem] md:h-[20rem] sm:h-[17rem] d-sm:h-[14rem]"
+              alt="..."
+            />
+          </div>
+
         </div>
         <div className="carousel-item">
-          <img
-            src="https://glistenblossom.com/_next/image?url=https%3A%2F%2Fapi.krubkrong.com%2Fcdn%2Fimage%2F7088f7fb-fe04-414a-b05f-46248b06a5fe.jpg&w=3840&q=100"
-            className="w-full min-xl:h-[30rem] xl:h-[25rem] lg:h-[23rem] md:h-[20rem] sm:h-[17rem] d-sm:h-[14rem]"
-            alt="..."
-          />
+          <div className="image-container">
+            <img
+              src="https://glistenblossom.com/_next/image?url=https%3A%2F%2Fapi.krubkrong.com%2Fcdn%2Fimage%2F7088f7fb-fe04-414a-b05f-46248b06a5fe.jpg&w=3840&q=100"
+              className="w-full min-xl:h-[30rem] xl:h-[25rem] lg:h-[23rem] md:h-[20rem] sm:h-[17rem] d-sm:h-[14rem]"
+              alt="..."
+            />
+          </div>
         </div>
         <div className="carousel-item">
-          <img
-            src="https://glistenblossom.com/_next/image?url=https%3A%2F%2Fapi.krubkrong.com%2Fcdn%2Fimage%2F7674ed15-ad71-43cf-9a7b-e0ab0c774a25.webp&w=3840&q=100"
-            className="w-full min-xl:h-[30rem] xl:h-[25rem] lg:h-[23rem] md:h-[20rem] sm:h-[17rem] d-sm:h-[14rem]"
-            alt="..."
-          />
+          <div className="image-container">
+
+            <img
+              src="https://glistenblossom.com/_next/image?url=https%3A%2F%2Fapi.krubkrong.com%2Fcdn%2Fimage%2F7674ed15-ad71-43cf-9a7b-e0ab0c774a25.webp&w=3840&q=100"
+              className="w-full min-xl:h-[30rem] xl:h-[25rem] lg:h-[23rem] md:h-[20rem] sm:h-[17rem] d-sm:h-[14rem]"
+              alt="..."
+            />
+          </div>
         </div>
       </div>
 

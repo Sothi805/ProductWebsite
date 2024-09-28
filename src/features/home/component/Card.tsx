@@ -36,7 +36,8 @@ const Card = () => {
         </p>
 
         {/* Price */}
-        <p className="text-lg font-bold text-gray-600 mt-2">$199.99</p>
+        <p className="text-sm line-through font-bold text-gray-600 mt-2">$199.99</p>
+        <p className="text-lg font-bold text-red-500 mt-1">$399.99</p>
 
         {/* Action Buttons */}
         <div className="flex justify-end gap-[10px] mt-4">
