@@ -20,9 +20,9 @@ const HonmePage = () => {
           item2={card2}
         />
       </div>
-      <div className="grid grid-cols-2 gap-[3rem] w-full px-[4.5rem] mt-3">
-        <img className="h-[23rem]" src="https://glistenblossom.com/_next/image?url=https%3A%2F%2Fapi.krubkrong.com%2Fcdn%2Fimage%2Fb9330deb-f188-4644-acc0-4ded3ec104b0.png&w=1920&q=100" />
-        <img className="h-[23rem]" src="https://glistenblossom.com/_next/image?url=https%3A%2F%2Fapi.krubkrong.com%2Fcdn%2Fimage%2F3a9c3150-64cf-4f13-8cbd-cf7d733b2f4f.png&w=1920&q=100" alt="" />
+      <div className="grid min-lg:grid-cols-2 lg:grid-cols-1 gap-[3rem] w-full min-lg:px-[4.5rem] lg:px-2 mt-3">
+        <img className="min-lg:h-[22rem] lg:h-[17rem] sm:h-[14rem]" src="https://glistenblossom.com/_next/image?url=https%3A%2F%2Fapi.krubkrong.com%2Fcdn%2Fimage%2Fb9330deb-f188-4644-acc0-4ded3ec104b0.png&w=1920&q=100" />
+        <img className="min-lg:h-[22rem] lg:h-[17rem] sm:h-[14rem]" src="https://glistenblossom.com/_next/image?url=https%3A%2F%2Fapi.krubkrong.com%2Fcdn%2Fimage%2F3a9c3150-64cf-4f13-8cbd-cf7d733b2f4f.png&w=1920&q=100" alt="" />
       </div>
      
     </div>

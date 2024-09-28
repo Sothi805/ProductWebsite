@@ -31,7 +31,7 @@ const SlideShow = () => {
           <div className="image-container">
             <img
               src="https://glistenblossom.com/_next/image?url=https%3A%2F%2Fapi.krubkrong.com%2Fcdn%2Fimage%2Ff5797ace-79b5-4baf-a92f-f7a77664bf36.webp&w=3840&q=100"
-              className="w-full min-xl:h-[35rem] xl:h-[30rem] lg:h-[28rem] md:h-[22rem] sm:h-[18rem] d-sm:h-[15rem]"
+              className="w-full min-xl:h-[35rem] xl:h-[30rem] lg:h-[28rem] md:h-[22rem] sm:h-[18rem] d-sm:h-[14rem]"
               alt="..."
             />
           </div>
@@ -41,7 +41,7 @@ const SlideShow = () => {
           <div className="image-container">
             <img
               src="https://glistenblossom.com/_next/image?url=https%3A%2F%2Fapi.krubkrong.com%2Fcdn%2Fimage%2F7088f7fb-fe04-414a-b05f-46248b06a5fe.jpg&w=3840&q=100"
-               className="w-full min-xl:h-[35rem] xl:h-[30rem] lg:h-[28rem] md:h-[22rem] sm:h-[18rem] d-sm:h-[15rem]"
+               className="w-full min-xl:h-[35rem] xl:h-[30rem] lg:h-[28rem] md:h-[22rem] sm:h-[18rem] d-sm:h-[14rem]"
               alt="..."
             />
           </div>
@@ -51,7 +51,7 @@ const SlideShow = () => {
 
             <img
               src="https://glistenblossom.com/_next/image?url=https%3A%2F%2Fapi.krubkrong.com%2Fcdn%2Fimage%2F7674ed15-ad71-43cf-9a7b-e0ab0c774a25.webp&w=3840&q=100"
-                className="w-full min-xl:h-[35rem] xl:h-[30rem] lg:h-[28rem] md:h-[22rem] sm:h-[18rem] d-sm:h-[15rem]"
+                className="w-full min-xl:h-[35rem] xl:h-[30rem] lg:h-[28rem] md:h-[22rem] sm:h-[18rem] d-sm:h-[14rem]"
               alt="..."
             />
           </div>

@@ -1,7 +1,7 @@
 import './style.css';
 const Card = () => {
   return (
-    <div className="p-3 action-card-hover relative overflow-hidden cursor-pointer border border-gray-200 bg-white hover:-translate-y-1 hover:shadow-gray-400 transition-all duration-300">
+    <div className="min-sm:p-3 sm:p-0 action-card-hover relative overflow-hidden cursor-pointer border border-gray-200 bg-white hover:-translate-y-1 hover:shadow-gray-400 transition-all duration-300">
       {/* Image Section */}
 
       <div
