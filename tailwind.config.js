@@ -19,8 +19,8 @@ export default {
       'min-md': { 'min': '767px' },
       'sm': { 'max': '639px' },
       'd-sm': { 'max': '550px' },
-      'dd-sm': { 'max': '430px' },
-      'min-dd-sm': { 'min': '430px' },
+      'dd-sm': { 'max': '470px' },
+      'min-dd-sm': { 'min': '470px' },
       'min-sm': { 'min': '639px' },
     }
   },

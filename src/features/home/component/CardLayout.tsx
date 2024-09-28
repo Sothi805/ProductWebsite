@@ -2,7 +2,7 @@ import Card from "./Card";
 
 const CardLayout = ({ title1, item1, title2, item2 }: any) => {
   return (
-    <div className="min-xl:max-w-[95%] opacity xl:max-w-[80%] sm:max-w-[100%] rounded-md bg-white pb-4 relative mt-1 z-40 mx-auto">
+    <div className="min-xl:max-w-[95%] opacity xl:max-w-[95%] sm:max-w-[100%] rounded-md bg-white pb-4 relative mt-1 z-40 mx-auto">
       {/* 1 */}
       <Title title={title1} />
       <div className="gap-2 min-xl:px-[2rem] d-sm:px-[0.5rem] xl:px-[2.2rem] grid min-xl:grid-cols-5 xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2">

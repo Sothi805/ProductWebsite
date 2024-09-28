@@ -9,14 +9,14 @@ const HonmePage = () => {
    
      <>
       <div className="max-w-[1590px] mx-auto">
-      <div className="">
+      <div className="min-sm:max-w-[91%] sm:max-w-[100%] mx-auto">
         <SlideShow />
       </div>
       <div>
         <CardLayout
           title1="BEST SELLERS"
           item1={card1}
-          title2="Time Dea"
+          title2="Time Deal"
           item2={card2}
         />
       </div>

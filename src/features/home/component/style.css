@@ -1,0 +1,11 @@
+.action-card {
+    bottom: -50px;
+    transition: all 0.2s linear, opacity 0.2s linear; /* Include opacity in the transition */
+    animation: card-actions 1s linear;
+    opacity: 0; /* Set initial opacity to 0 */
+}
+
+.action-card-hover:hover .action-card {
+    bottom: 0px;
+    opacity: 1; /* Change opacity to 1 on hover */
+}
